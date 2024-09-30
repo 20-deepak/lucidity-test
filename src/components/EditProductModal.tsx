@@ -20,7 +20,7 @@ function EditProductModal({
     toggleEditModal();
   };
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: { target: HTMLInputElement }) => {
     setProductData({ ...productData, [e.target.name]: e.target.value });
   };
   return (
